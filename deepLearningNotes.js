@@ -16,7 +16,8 @@ Each connection between nodes has an associated weight.
 
 Forward pass - Data moving through the model from input to output. A single pass of the entire dataset to the network is called an Epoch.
 
-In an ANN, an activation function is a function that maps a node's inputs to its corresponding output. There are many types but two examples are ReLU and Sigmoid (graphs below).
+In an ANN, an activation function is a function that maps a node's inputs to its corresponding output. 
+There are many types but two examples are ReLU and Sigmoid (graphs below).
 
 //* ReLU & Sigmoid Diagrams
 
@@ -89,4 +90,24 @@ Data for our model is broken down into three distinct sets:
 //? Validation Set (does not update the weights, includes labels)
 //? Test Set (does not update the weights, does not include labels).
 
-Labels are necessary to so that the loss and accuracy can be determined from each epoch.*/
+Labels are necessary to so that the loss and accuracy can be determined from each epoch.
+
+If the validation metrics are considerably worse than the training metrics, then that is indication that our model is over-fitting. 
+We can also get an idea that our model is over-fitting if during training, the model’s metrics were good, 
+but when we use the model to predict on test data, it doesn't accurately classify the data in the test set. 
+Solutions:
+    * Decrease data model complexity
+    * Increase dropout (use less nodes/neurons)
+
+A model is said to be under-fitting when it is not able to classify the data it was trained on. 
+Solutions:
+    * Increase data model complexity...
+        # Increasing the number of layers in the model.
+        # Increasing the number of neurons in each layer.
+        # Changing what type of layers we’re using and where.
+    * Decrease dropout (use more of the nodes/neurons)
+    * Add more features to the data input samples
+
+Dropout is a regularization process
+
+*/
