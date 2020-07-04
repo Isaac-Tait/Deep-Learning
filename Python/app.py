@@ -20,6 +20,16 @@ print(character_location[5])
 print(character_name.index("e"))
 print(character_location.replace("Splenda", "Cane"))
 
+#Math in Python 🤓
+#You may need to use the following line of code for more complex math operators by giving us access to the math module.
+#from math import *
+
 my_num = 360
+another_num = -345
+
 print(my_num % 7)
 print(str(my_num % 7.3) + " is my favorite number")#If you do not use str() to append a number to a string Python will return an error
+print(abs(another_num))#absolute value
+print(pow(3, 2))#3^2 === 9
+print(max(3, 456, -3, 45, 789654))#prints the highest number
+print(round(3.4))#rounds to the nearest whole number
