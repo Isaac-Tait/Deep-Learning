@@ -1,4 +1,4 @@
-from Question import Question
+import Question from Question
 
 question_prompts = [
     "The following are species of native trout found in Tohoku Japan except?\n(a)Yamame\n(b)Iwana\n(c)Golden Trout\n\n",
@@ -21,3 +21,5 @@ def run_test(questions):
     print("You got " + str(score) + " out of" + str(len(questions)) + " correct")
 
 run_test(questions)
+
+# I am not sure why this is not working (and why is this file name underlined in red?)...
