@@ -1,0 +1,11 @@
+A text file with nothing really important in it, just a bunch of text so I can play around with reading and writing files in Python.
+
+1 - Eat a vegan meal
+2 - Buy kombucha
+3 - Do some yoga
+4 - Brush my teeth
+5 - Read my Bible
+
+I added this sentence from PyCharm from scratchPad6.py
+I added this sentence from PyCharm from scratchPad6.py. 
+Pretty cool huh?
